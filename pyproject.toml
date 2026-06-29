@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my9"
+version = "0.1.0"
+description = "Мой первый пакет с полезными функциями"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "baiallan", email = "baiallan2008@gmail.com"}
+]
+license = {text = "MIT"}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["baiallan*"]
